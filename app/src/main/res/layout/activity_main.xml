@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/BMICalculaotr_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/BMICalculator_Text"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@color/Black"
+        android:textSize="@dimen/BMI_TextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EnterWeight_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/EnterWeight_Text"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/Text_Size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EnterHeight_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/EnterHeight_Text"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/Text_Size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterWeight_Text" />
+
+    <EditText
+        android:id="@+id/Weight_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Height_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Weight_Text" />
+
+    <Button
+        android:id="@+id/btn_Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="Button"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/Text_Size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterHeight_Text"
+        tools:text="@string/btn_Calculate" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="84dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/btn_reset"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/Text_Size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Height_Text" />
+
+    <TextView
+        android:id="@+id/BMIresult_Text"
+        android:layout_width="187dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="28dp"
+        android:textSize="@dimen/Text_Size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_Empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/empty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

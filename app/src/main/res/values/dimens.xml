@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="BMI_TextSize">25sp</dimen>
+    <dimen name="Text_Size">20sp</dimen>
+</resources>
